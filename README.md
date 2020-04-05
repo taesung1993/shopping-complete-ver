@@ -3,7 +3,7 @@
 ## Introduction
 
 이 작품은 스파르타 코딩클럽 4주차 과제이다. 아래 영상은 이 작품의 시연연상이다.  
-**(급하신 분들은 35초부터 보시면 된다.]).**
+**(35초부터 보세요]).**
 
 [![Video Label](https://img.youtube.com/vi/l2bVTMOXP4s/0.jpg)](https://youtu.be/l2bVTMOXP4s)
 
