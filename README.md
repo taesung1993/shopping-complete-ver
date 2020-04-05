@@ -1,2 +1,43 @@
 # shopping-complete-ver
-This work can enter input ordering information, send to server and receive from server 
+
+## Introduction
+
+이 작품은 스파르타 코딩클럽 4주차 과제이다. 아래 영상은 이 작품의 시연연상이다.  
+**(급하신 분들은 35초부터 보시면 된다.]).**
+
+[![Video Label](https://img.youtube.com/vi/l2bVTMOXP4s/0.jpg)](https://youtu.be/l2bVTMOXP4s)
+
+이 작품을 구현하기 위해 다음과 같은 프로그램과 언어를 썼다.
+
+프로그램  
+ [x] Vscode [x] MongoDB
+
+언어  
+[x] Python [x] HTML [x] CSS [x] Jquery
+
+## Discussion
+
+이번 과제를 하면서 많은 에러를 만났다. 그 중에서도 정말 지독한 에러 두 가지 있었는데, 내용은 다음과 같다.
+
+#### 1. 수정한 JS, CSS파일의 내용이 새로고침해도 반영되지 않는 문제.
+
+첫 번째 문제였다. 플라스크를 런하고 'local:port번호' 주소로 접속했다. 그리고 나는 제이쿼리 파일의 내용을 수정하고서 새로고침을 했지만 결과가 반영되지 않았다.  
+ 그 이유는 크롬을 포함한 요즘 브라우저는 캐시를 이용하여 로딩하는 방식을 택하고 있는데, 그 캐시메모리에 적재된 자바스크립트, CSS파일 내용으로 계속 처리하기 때문이라고 한다.
+그래서 브라우저는 새로 변경된 파일을 인식을 못해서 변경된 내용을 로딩하지 못하는 것이다.
+이를 해결하기 위해서는 **[Ctrl + Shift + R]** 단축키를 이용하여 캐시, 브라우저를 한번에 새로고침 해주면 된다.
+
+#### 2. 파비콘 오류 메시지 404
+
+솔직히 이 에러는 프로그램에 큰 지장을 주지는 않지만, 너무나도 거슬리는 에러였다.
+이 에러 메세지는 파이썬 메서드 'GET', 'POST', 방식을 이용하여 데이터 송수신 테스트 중, 콘솔창에서 발견했다.
+
+`Failed to load resource: the server responded with a status of 404 (NOT FOUND)`
+
+원인은 브라우저 타이틀 맨 왼쪽에 아이콘(지구 모양 아이콘) 때문이라고 한다. 이 아이콘의 경로를 찾을 수 없다는 것을 우리에게 알려주는 메시지이다.
+애초에 아이콘을 설정해주지도 않았는데...아무튼 지구모양 아이콘은 아이콘 경로를 찾을 수 없으니 뜨는 디폴트 값인 것 같다.
+
+이 메시지의 해결법은 헤드 태그 안에 다음과 같은 태그를 추가해주면 된다.
+
+```HTML
+        <link rel="shortcut icon" href="#" />
+```
