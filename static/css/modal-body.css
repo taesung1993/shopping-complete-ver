@@ -1,0 +1,33 @@
+.modal-body .modal-body__anime {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("../images/modal-img.png");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #272727;
+  margin: 10px auto;
+  animation: imgSpin 2s infinite linear;
+}
+
+.modal-body .modal-body__msg {
+  font-size: 24px;
+}
+
+@keyframes imgSpin {
+  0% {
+    transform: none;
+    box-shadow: none;
+  }
+  30% {
+    transform: none;
+    box-shadow: 0 0 20px rgba(255, 214, 80, 0.7);
+  }
+  60% {
+    transform: none;
+    box-shadow: none;
+  }
+  70% {
+    transform: rotateY(1turn);
+  }
+}

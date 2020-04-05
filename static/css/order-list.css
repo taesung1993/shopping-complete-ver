@@ -1,0 +1,9 @@
+.order-list {
+  margin-top: 40px;
+  border: 1px solid black;
+}
+
+.order-list .mytable-title {
+  display: block;
+  font-size: 30px;
+}
